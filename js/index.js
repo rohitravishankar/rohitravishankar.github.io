@@ -171,7 +171,8 @@ function getData() {
         {"id": "work", "data": "Work", "group": 2, "size": 40, "fa": '\uf0b1'},
         {"id": "w1", "data": "Gain Theory", "group": 2, "size": 50, "img": "img/GainTheory.jpg"},
         {"id": "w2", "data": "Tesco", "group": 2, "size": 50, "img": "img/Tesco.png"},
-        {"id": "w3", "data": "Accenture", "group": 2, "size": 50, "img": "img/Accenture.png"},
+	{"id": "w3", "data": "Apple", "group": 2, "size": 50, "img": "img/Apple.png"},
+        {"id": "w4", "data": "Accenture", "group": 2, "size": 50, "img": "img/Accenture.png"},
         
         {"id": "education", "data": "Education", "group": 3, "size": 40, "fa": '\uf19c'},
         {"id": "e1", "data": "Lilavatibai Podar Senior Secondary School", "group": 3, "size": 50, "img": "img/podar.jpg"},
