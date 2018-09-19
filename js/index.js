@@ -202,6 +202,7 @@ function getData() {
                     {"source": "work", "target": "w1", "weight": 4},
                     {"source": "work", "target": "w2", "weight": 4},
                     {"source": "work", "target": "w3", "weight": 4},
+		    {"source": "work", "target": "w4", "weight": 4},
                     
                     {"source": "education", "target": "e1", "weight": 4},
                     {"source": "education", "target": "e2", "weight": 4},
