@@ -166,58 +166,59 @@ force.start();
 function getData() {
     return {
         "nodes": [
-        {"id": "me", "data": "Rohit Ravishankar", "group": 1, "size": 120, "img": "img/rohit.jpeg"},
-        
-        {"id": "work", "data": "Work", "group": 2, "size": 40, "fa": '\uf0b1'},
-        {"id": "w1", "data": "Gain Theory", "group": 2, "size": 50, "img": "img/GainTheory.jpg"},
-        {"id": "w2", "data": "Tesco", "group": 2, "size": 50, "img": "img/Tesco.png"},
-	{"id": "w3", "data": "Apple", "group": 2, "size": 50, "img": "img/Apple.png"},
-        {"id": "w4", "data": "Accenture", "group": 2, "size": 50, "img": "img/Accenture.png"},
-        
-        {"id": "education", "data": "Education", "group": 3, "size": 40, "fa": '\uf19c'},
-        {"id": "e1", "data": "Lilavatibai Podar Senior Secondary School", "group": 3, "size": 50, "img": "img/podar.jpg"},
-        {"id": "e2", "data": "P.E.S. Institute of Technology", "group": 3, "size": 50, "img": "img/pesit.jpg"},
-        {"id": "e3", "data": "Rochester Institute of Technology", "group": 3, "size": 50, "img": "img/rit.png"},
-        
-        {"id": "links", "data": "Links", "group": 4, "size": 40, "fa": '\uf007'},
-        {"id": "l1", "data": "Github", "group": 4, "size": 30, "fa": '\uf09b', "url" : "https://github.com/rohitravishankar/"},
+            {"id": "me", "data": "Rohit Ravishankar", "group": 1, "size": 120, "img": "img/rohit.jpeg"},
+            
+            {"id": "work", "data": "Work", "group": 2, "size": 40, "fa": '\uf0b1'},
+            {"id": "w1", "data": "Gain Theory", "group": 2, "size": 50, "img": "img/GainTheory.jpg"},
+            {"id": "w2", "data": "Tesco", "group": 2, "size": 50, "img": "img/Tesco.png"},
+    	    {"id": "w3", "data": "Apple", "group": 2, "size": 50, "img": "img/Apple.png"},
+            {"id": "w4", "data": "Accenture", "group": 2, "size": 50, "img": "img/Accenture.png"},
+            {"id": "w5", "data": "Wayfair", "group": 2, "size": 50, "img": "img/Wayfair.jpg"},
+            
+            {"id": "education", "data": "Education", "group": 3, "size": 40, "fa": '\uf19c'},
+            {"id": "e1", "data": "Lilavatibai Podar Senior Secondary School", "group": 3, "size": 50, "img": "img/podar.jpg"},
+            {"id": "e2", "data": "P.E.S. Institute of Technology", "group": 3, "size": 50, "img": "img/pesit.jpg"},
+            {"id": "e3", "data": "Rochester Institute of Technology", "group": 3, "size": 50, "img": "img/rit.png"},
+            
+            {"id": "links", "data": "Links", "group": 4, "size": 40, "fa": '\uf007'},
+            {"id": "l1", "data": "Github", "group": 4, "size": 30, "fa": '\uf09b', "url" : "https://github.com/rohitravishankar/"},
             {"id": "l2", "data": "LinkedIn", "group": 4, "size": 30, "fa": '\uf0e1', "url" : "https://www.linkedin.com/in/rohit-ravishankar/"},
-                {"id": "l3", "data": "StackOverflow", "group": 4, "size": 30, "fa": '\uf16c', "url" : "https://stackoverflow.com/users/5924566/rohitravishankar"},
+            {"id": "l3", "data": "StackOverflow", "group": 4, "size": 30, "fa": '\uf16c', "url" : "https://stackoverflow.com/users/5924566/rohitravishankar"},
+                        
+            {"id": "skills", "data": "Skills", "group": 5, "size": 40, "fa": '\uf109'},
+            {"id": "s1", "data": "Java", "group": 5, "size": 30, "img": "img/java.png"},
+            {"id": "s2", "data": "Python", "group": 5, "size": 30, "img": "img/python.png"},
+            {"id": "s3", "data": "R", "group": 5, "size": 30, "img": "img/Rlogo.svg"},
                     
-                    {"id": "skills", "data": "Skills", "group": 5, "size": 40, "fa": '\uf109'},
-                    {"id": "s1", "data": "Java", "group": 5, "size": 30, "img": "img/java.png"},
-                    {"id": "s2", "data": "Python", "group": 5, "size": 30, "img": "img/python.png"},
-		    {"id": "s3", "data": "R", "group": 5, "size": 30, "img": "img/Rlogo.svg"},
-                    
-                    {"id": "publications", "data": "Publications", "group": 7, "size": 40, "fa": '\uf1ea', "url" : "https://drive.google.com/open?id=0B1CTCo2mIyOSVnVwVXhJVjFVSHM"},
-                    {"id": "p1", "data": "ViLeT Automatic Summarization", "group": 7, "size": 50, "img": "img/video-to-text.png", "url" : "https://drive.google.com/open?id=0B1CTCo2mIyOSVnVwVXhJVjFVSHM"}
-                    ],
-                    "links": [
-                    {"source": "me", "target": "work", "weight": 10},
-                    {"source": "me", "target": "education", "weight": 10},
-                    {"source": "me", "target": "links", "weight": 10},
-                    {"source": "me", "target": "skills", "weight": 10},
-                    {"source": "me", "target": "publications", "weight": 10},
-                    
-                    {"source": "work", "target": "w1", "weight": 4},
-                    {"source": "work", "target": "w2", "weight": 4},
-                    {"source": "work", "target": "w3", "weight": 4},
-		    {"source": "work", "target": "w4", "weight": 4},
-                    
-                    {"source": "education", "target": "e1", "weight": 4},
-                    {"source": "education", "target": "e2", "weight": 4},
-                    {"source": "education", "target": "e3", "weight": 4},
-                    
-                    {"source": "links", "target": "l1", "weight": 4},
-                    {"source": "links", "target": "l2", "weight": 4},
-                    {"source": "links", "target": "l3", "weight": 4},
-                    
-                    {"source": "skills", "target": "s1", "weight": 4},
-                    {"source": "skills", "target": "s2", "weight": 4},
-		    {"source": "skills", "target": "s3", "weight": 4},
-                    
-                    {"source": "publications", "target": "p1", "weight": 4}
-                    
-                    ]
-                }
-            }
+            {"id": "publications", "data": "Publications", "group": 7, "size": 40, "fa": '\uf1ea', "url" : "https://drive.google.com/open?id=0B1CTCo2mIyOSVnVwVXhJVjFVSHM"},
+            {"id": "p1", "data": "ViLeT Automatic Summarization", "group": 7, "size": 50, "img": "img/video-to-text.png", "url" : "https://drive.google.com/open?id=0B1CTCo2mIyOSVnVwVXhJVjFVSHM"}
+        ],
+        "links": [
+            {"source": "me", "target": "work", "weight": 10},
+            {"source": "me", "target": "education", "weight": 10},
+            {"source": "me", "target": "links", "weight": 10},
+            {"source": "me", "target": "skills", "weight": 10},
+            {"source": "me", "target": "publications", "weight": 10},
+            
+            {"source": "work", "target": "w1", "weight": 4},
+            {"source": "work", "target": "w2", "weight": 4},
+            {"source": "work", "target": "w3", "weight": 4},
+            {"source": "work", "target": "w4", "weight": 4},
+            {"source": "work", "target": "w5", "weight": 4},
+            
+            {"source": "education", "target": "e1", "weight": 4},
+            {"source": "education", "target": "e2", "weight": 4},
+            {"source": "education", "target": "e3", "weight": 4},
+            
+            {"source": "links", "target": "l1", "weight": 4},
+            {"source": "links", "target": "l2", "weight": 4},
+            {"source": "links", "target": "l3", "weight": 4},
+            
+            {"source": "skills", "target": "s1", "weight": 4},
+            {"source": "skills", "target": "s2", "weight": 4},
+            {"source": "skills", "target": "s3", "weight": 4},
+            
+            {"source": "publications", "target": "p1", "weight": 4} 
+        ]
+    }
+}
